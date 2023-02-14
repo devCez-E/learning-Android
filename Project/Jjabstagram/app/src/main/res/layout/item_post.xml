@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/jj_photo"
+        android.scaleType="center"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="#F3B5D3"
+        android:scaleType="centerCrop"
+        android:src="@drawable/seung" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#EEEEEE" />
+
+    <RelativeLayout
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id='@+id/jj_like'
+            android:background="#454522"
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+
+        <TextView
+            android:layout_toLeftOf='@id/jj_share'
+            android:layout_toRightOf='@id/jj_like'
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:layout_centerVertical="true"
+            android:text="12341234231532135132135423215321351321351321111111111"
+            android:lines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        />
+
+        <ImageView
+            android:id='@+id/jj_share'
+            android:layout_alignParentRight="true"
+            android:background="#764432"
+            android:layout_width="48dp"
+            android:layout_height="48dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000" />    
+
+    <RelativeLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id='@+id/tv_uploader'
+            android:text="ansta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        />
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf='@id/tv_uploader'
+            android:text="불꽃놀이했어요~:)"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        />
+    </RelativeLayout>
+</LinearLayout>
